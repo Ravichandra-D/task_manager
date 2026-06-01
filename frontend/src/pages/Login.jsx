@@ -64,7 +64,7 @@ export default function Login() {
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
           {apiError && <Alert type="error">{apiError}</Alert>}
           <Input
-            id="email" label="Email" type="email" placeholder="you@example.com"
+            id="email" label="Email" type="email" placeholder="ravichandra@example.com"
             value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
             error={errors.email} autoComplete="email"
           />
